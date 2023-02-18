@@ -1,3 +1,11 @@
+/*
+Things I could not understand about this test
+I could not create the register or login because I cannot find the logic on how
+bcrypt works and also I am kind of struggling with arrays too. But nevertheless
+I understood the rest of the API structure.
+*/
+
+
 const express = require ("express");
 const bodyparser = require ("body-parser");
 const app = express();
@@ -105,16 +113,19 @@ app.get('/showone', function(req, res){
 
 
 
-app.post('/register', function(req, res){
+/*app.post('/register', function(req, res){
     let bodyreq = req.body;
     db_array.push(bodyreq);
     res.send(db_array);
 });
 
+
+
+
 app.get('/login', function(req, res){
     let bodyreq = req.body;
 
-});
+});*/
 
 const PORT = process.env.PORT || 3000;
 
